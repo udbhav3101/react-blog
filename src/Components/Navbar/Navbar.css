@@ -2,10 +2,11 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    max-width: 600px;
+    max-width: auto;
     margin: 0 auto;
     border-bottom: 1px solid #f2f2f2;
     margin-left: 2px;
+    margin-top: 0px;
 }
 
 .navbar h1 {

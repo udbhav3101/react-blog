@@ -12,10 +12,19 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
       ])
     
+      const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
+      }
+
+      useEffect(() => {
+        console.log("Use Effect ran");
+        console.log(blogs);
+      });
     
   return (
     <div className="home">
-      <BlogsList blogs={blogs}/>
+      <BlogsList blogs={blogs} title="All Blogs!!😊" handleDelete = {handleDelete}/>
     </div>
   );
 }
