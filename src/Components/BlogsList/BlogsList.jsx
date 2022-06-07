@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './BlogsList.css';
+
 
 const BlogsList = (props) => {
 
     const blogs = props.blogs;
     const title = props.title;
-    const handleDelete = props.handleDelete;
+    
+
     // console.log(props, blogs);
 
 
@@ -16,7 +19,7 @@ const BlogsList = (props) => {
             <h2> { blog.title }</h2>
             <p> Written By { blog.author }</p>
 
-            <button onClick={() => handleDelete(blog.id)}>Delete</button>
+            
         </div>
     ))}
     </div>
