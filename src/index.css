@@ -5,3 +5,9 @@
   font-family: "Fira Code";
   color: #333;
 }
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
