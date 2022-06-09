@@ -1,10 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';  
 import useFetch from '../../useFetch';
 import BlogsList from '../BlogsList/BlogsList';
 import './Home.css';
-
-
 
 
 const Home = () => {

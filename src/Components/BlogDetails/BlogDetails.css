@@ -1,0 +1,23 @@
+.blog-details div{
+    margin: 20px 10px; 
+}
+.blog-details h2{
+    color: hsl(184, 45%, 22%)
+}
+.blog-details p{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.blog-details button {
+    background: #0a3830;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .blog-details button:hover{
+      background-color: red;
+  }

@@ -25,3 +25,7 @@
     border: 1px solid;
 }
 
+.blog-preview a{
+    text-decoration: none;
+}
+
