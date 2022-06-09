@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import useFetch from '../../useFetch';
 import './BlogDetails.css';
