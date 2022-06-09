@@ -18,8 +18,7 @@ const Create = () => {
         const blog = { title, body, author };
         // console.log(blog);
         setLoading(true);
-
-        fetch('https://reactblog-uv.herokuapp.com/blogs', {
+        fetch('https://reactblog-uv.herokuapp.com/', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(blog)
