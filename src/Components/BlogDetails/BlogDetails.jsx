@@ -7,12 +7,12 @@ import './BlogDetails.css';
 const BlogDetails = () => {
 
     const { id } = useParams();
-    const { data: blog, errorMessage, loading } = useFetch('http://localhost:8000/blogs/'+id)
+    const { data: blog, errorMessage, loading } = useFetch('https://react-blog-uv.herokuapp.com/blogs/'+id)
     const navigate = useNavigate();
 
 
     const handleClick = () =>{
-        fetch('http://localhost:8000/blogs/' + blog.id, {
+        fetch('https://react-blog-uv.herokuapp.com/blogs/' + blog.id, {
             method : 'DELETE'
         })
         .then( () => {
