@@ -9,11 +9,11 @@ const middlewares = jsonServer.defaults();
 
 
 const PORT = process.env.PORT || 8000
-app.use('./db.json', middlewares, router);
+// app.use('./db.json', middlewares, router);
 
-// server.use(jsonServer.rewriter({
-//     '/api/*':'/$1',
-// }))
+server.use(jsonServer.rewriter({
+    '/api/*':'/$1',
+}))
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
