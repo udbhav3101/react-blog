@@ -6,7 +6,7 @@ import './Home.css';
 
 const Home = () => {
 
-  const {data: blogs, loading, errorMessage} = useFetch('https://react-blog-uv.herokuapp.com/blogs')
+  const {data: blogs, loading, errorMessage} = useFetch(' https://reactblog-uv.herokuapp.com/')
       
     
   return (
