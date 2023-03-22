@@ -9,7 +9,7 @@ const BlogDetails = () => {
     data: blog,
     errorMessage,
     loading,
-  } = useFetch('https://udbhav-blog.vercel.app/blogs' + id);
+  } = useFetch('https://udbhav-blog.vercel.app/blogs/' + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
