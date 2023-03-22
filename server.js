@@ -4,26 +4,21 @@ const server = jsonServer.create();
 
 const router = jsonServer.router('./db.json');
 
-const middlewares = jsonServer.defaults({
-
-  static: './build'
-
-});
+const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 8000;
 
 server.use(middlewares);
 
-server.use(jsonServer.rewriter({
-
-  '/api/*': '/$1',
-
-}))
+server.use(
+  jsonServer.rewriter({
+    '/api/*': '/$1',
+    '/blog/:resource/:id/show': '/:resource/:id',
+  }),
+);
 
 server.use(router);
 
 server.listen(PORT, () => {
-
   console.log('Server is running');
-
 });
