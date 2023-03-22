@@ -9,11 +9,11 @@ const BlogDetails = () => {
     data: blog,
     errorMessage,
     loading,
-  } = useFetch('https://reactblog-uv.herokuapp.com/blogs/' + id);
+  } = useFetch('https://udbhav-blog.vercel.app/blogs' + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch('https://reactblog-uv.herokuapp.com/blogs/' + blog.id, {
+    fetch('https://udbhav-blog.vercel.app/blogs/' + blog.id, {
       method: 'DELETE',
     }).then(() => {
       navigate('/');

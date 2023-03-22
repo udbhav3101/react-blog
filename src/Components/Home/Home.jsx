@@ -8,7 +8,7 @@ const Home = () => {
     data: blogs,
     loading,
     errorMessage,
-  } = useFetch('https://reactblog-uv.herokuapp.com/blogs/');
+  } = useFetch('https://udbhav-blog.vercel.app/blogs/');
 
   return (
     <div className="home">
