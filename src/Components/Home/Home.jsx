@@ -9,7 +9,6 @@ const Home = () => {
     loading,
     errorMessage,
   } = useFetch(`${process.env.REACT_APP_API_URL}/blogs`);
-  console.log(process.env)
   return (
     <div className="home">
       {errorMessage && <div> {errorMessage} </div>}
