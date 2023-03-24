@@ -8,8 +8,8 @@ const Home = () => {
     data: blogs,
     loading,
     errorMessage,
-  } = useFetch('https://udbhav-blog.vercel.app/blogs/');
-
+  } = useFetch(`${process.env.REACT_APP_API_URL}/blogs`);
+  console.log(process.env)
   return (
     <div className="home">
       {errorMessage && <div> {errorMessage} </div>}

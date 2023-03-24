@@ -9,11 +9,11 @@ const BlogDetails = () => {
     data: blog,
     errorMessage,
     loading,
-  } = useFetch('https://udbhav-blog.vercel.app/blogs/' + id);
+  } = useFetch(`${process.env.REACT_APP_API_URL}/blogs/` + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch('https://udbhav-blog.vercel.app/blogs/' + blog.id, {
+    fetch(`${process.env.REACT_APP_API_URL}/blogs/` + blog.id, {
       method: 'DELETE',
     }).then(() => {
       navigate('/');
